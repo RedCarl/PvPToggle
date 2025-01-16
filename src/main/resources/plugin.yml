@@ -1,0 +1,8 @@
+name: PvPToggle
+version: '1.0'
+main: co.ooci.plugin.PvPToggle
+api-version: '1.21'
+prefix: [ PvPToggle ]
+authors: [ OociStudios ]
+description: Manage the player's pvp status.
+website: https://studios.ooci.co
