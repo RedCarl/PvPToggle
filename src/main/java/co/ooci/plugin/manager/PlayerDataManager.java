@@ -46,14 +46,11 @@ public class PlayerDataManager {
     public boolean isPvP(UUID uuid) {
         PlayerData data = cache.get(uuid.toString());
         if (data == null) {
-            Player player = Bukkit.getPlayer(uuid);
-            if (player != null) {
-                data = PlayerData.builder()
-                        .uuid(uuid.toString())
-                        .pvp(false)
-                        .build();
-                cache.put(uuid.toString(), data);
-            }
+            data = PlayerData.builder()
+                    .uuid(uuid.toString())
+                    .pvp(false)
+                    .build();
+            cache.put(uuid.toString(), data);
         }
         return data.isPvp();
     }

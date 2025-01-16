@@ -13,9 +13,9 @@ public class BaseCommand {
     void pvp(@Context Player sender) {
         boolean pvp = PlayerDataManager.getInstance().toggle(sender.getUniqueId());
         if(pvp) {
-            sender.sendMessage("§7您已 §a开启 §7PVP。");
-        } else {
             sender.sendMessage("§7您已 §c关闭 §7PVP。");
+        } else {
+            sender.sendMessage("§7您已 §a开启 §7PVP。");
         }
     }
 
